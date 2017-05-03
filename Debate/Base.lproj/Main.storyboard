@@ -1,14 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Debate" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,10 +22,144 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aA8-CX-cct">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="WET-xM-aAQ"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bqn-yr-2k2" customClass="FlatButton" customModule="Material">
+                                <rect key="frame" x="24" y="80" width="327" height="95.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <state key="normal" title="CASE/REBUTTAL"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                        <color key="value" red="1" green="0.59607843137254901" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWf-du-NPF" customClass="FlatButton" customModule="Material">
+                                <rect key="frame" x="24" y="199.5" width="327" height="95.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <state key="normal" title="CROSSFIRE">
+                                    <color key="titleColor" red="1" green="0.59607843137254901" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                        <color key="value" red="1" green="0.59607843137254901" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qah-uy-dpN" customClass="FlatButton" customModule="Material">
+                                <rect key="frame" x="24" y="319" width="327" height="95.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <state key="normal" title="SUMMARY">
+                                    <color key="titleColor" red="1" green="0.59607843140000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jP-OG-0mB" customClass="FlatButton" customModule="Material">
+                                <rect key="frame" x="24" y="438.5" width="327" height="95.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <state key="normal" title="FINAL FOCUS">
+                                    <color key="titleColor" red="1" green="0.59607843140000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pGz-y9-aYR">
+                                <rect key="frame" x="16" y="20" width="343" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="LbO-e4-TaA">
+                                    <rect key="frame" x="0.0" y="0.0" width="343" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1jP-OG-0mB" firstAttribute="top" secondItem="qah-uy-dpN" secondAttribute="bottom" constant="24" id="16t-cQ-kmN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qah-uy-dpN" secondAttribute="trailing" constant="8" id="AXC-UP-KBU"/>
+                            <constraint firstItem="aA8-CX-cct" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Erw-1f-K2f"/>
+                            <constraint firstItem="vWf-du-NPF" firstAttribute="top" secondItem="Bqn-yr-2k2" secondAttribute="bottom" constant="24" id="FRE-aS-BtN"/>
+                            <constraint firstItem="Bqn-yr-2k2" firstAttribute="top" secondItem="aA8-CX-cct" secondAttribute="bottom" constant="8" id="HEa-Rv-4TA"/>
+                            <constraint firstItem="vWf-du-NPF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="Mge-7g-o1B"/>
+                            <constraint firstAttribute="trailing" secondItem="aA8-CX-cct" secondAttribute="trailing" id="Oon-Vb-FFo"/>
+                            <constraint firstItem="1jP-OG-0mB" firstAttribute="height" secondItem="Bqn-yr-2k2" secondAttribute="height" id="SdK-8J-IDZ"/>
+                            <constraint firstItem="qah-uy-dpN" firstAttribute="top" secondItem="vWf-du-NPF" secondAttribute="bottom" constant="24" id="XP9-g2-2mk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pGz-y9-aYR" secondAttribute="trailing" id="Xwn-0q-WC1"/>
+                            <constraint firstItem="1jP-OG-0mB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="Ypn-CL-H2t"/>
+                            <constraint firstItem="vWf-du-NPF" firstAttribute="height" secondItem="Bqn-yr-2k2" secondAttribute="height" id="Zhf-2P-9ta"/>
+                            <constraint firstItem="aA8-CX-cct" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="a6g-zv-kiY"/>
+                            <constraint firstItem="Bqn-yr-2k2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="aNF-ra-kbQ"/>
+                            <constraint firstItem="qah-uy-dpN" firstAttribute="height" secondItem="vWf-du-NPF" secondAttribute="height" id="aOo-uK-m3J"/>
+                            <constraint firstItem="pGz-y9-aYR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="b0k-Aw-kNy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bqn-yr-2k2" secondAttribute="trailing" constant="8" id="iEo-cS-9Jy"/>
+                            <constraint firstItem="Bqn-yr-2k2" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1/7" id="mMG-HU-NoD"/>
+                            <constraint firstItem="pGz-y9-aYR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="nOO-px-RA6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1jP-OG-0mB" secondAttribute="trailing" constant="8" id="sQX-zL-vUU"/>
+                            <constraint firstItem="qah-uy-dpN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="xtP-8R-QVS"/>
+                            <constraint firstItem="pGz-y9-aYR" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="ztC-Mh-Rvg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vWf-du-NPF" secondAttribute="trailing" constant="8" id="zy3-Iv-eIE"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blur" destination="pGz-y9-aYR" id="66P-t9-tOa"/>
+                        <outlet property="button1" destination="Bqn-yr-2k2" id="b6d-L1-pgy"/>
+                        <outlet property="button2" destination="vWf-du-NPF" id="Qmf-zY-Bgs"/>
+                        <outlet property="button3" destination="qah-uy-dpN" id="H1D-lF-sXb"/>
+                        <outlet property="button4" destination="1jP-OG-0mB" id="xQG-nP-JpD"/>
+                        <outlet property="closeButton" destination="5tg-XW-RGR" id="QZf-WZ-iom"/>
+                        <outlet property="headerBar" destination="aA8-CX-cct" id="c27-EI-lZr"/>
+                        <outlet property="timeLabel" destination="fif-ck-bM8" id="IbI-jm-GI1"/>
+                        <outlet property="timerView" destination="UGx-6P-004" id="SpM-8n-veq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="UGx-6P-004">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="166"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fif-ck-bM8">
+                            <rect key="frame" x="8" y="64.5" width="224" height="38.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5tg-XW-RGR" customClass="IconButton" customModule="Material">
+                            <rect key="frame" x="108" y="134" width="24" height="24"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="agw-vz-kdc"/>
+                                <constraint firstAttribute="height" constant="24" id="bLK-Vt-amc"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="5tg-XW-RGR" firstAttribute="centerX" secondItem="fif-ck-bM8" secondAttribute="centerX" id="9dZ-yg-8MC"/>
+                        <constraint firstItem="fif-ck-bM8" firstAttribute="centerY" secondItem="UGx-6P-004" secondAttribute="centerY" id="LPX-y5-n3H"/>
+                        <constraint firstAttribute="trailing" secondItem="fif-ck-bM8" secondAttribute="trailing" constant="8" id="OaX-0K-pNX"/>
+                        <constraint firstAttribute="bottom" secondItem="5tg-XW-RGR" secondAttribute="bottom" constant="8" id="P55-Es-p22"/>
+                        <constraint firstItem="fif-ck-bM8" firstAttribute="leading" secondItem="UGx-6P-004" secondAttribute="leading" constant="8" id="fSq-kF-bhy"/>
+                        <constraint firstItem="fif-ck-bM8" firstAttribute="centerX" secondItem="UGx-6P-004" secondAttribute="centerX" id="zZQ-aO-E6j"/>
+                    </constraints>
+                </view>
             </objects>
         </scene>
     </scenes>

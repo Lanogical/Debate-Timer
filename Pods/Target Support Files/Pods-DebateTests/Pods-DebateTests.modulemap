@@ -1,0 +1,6 @@
+framework module Pods_DebateTests {
+  umbrella header "Pods-DebateTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
